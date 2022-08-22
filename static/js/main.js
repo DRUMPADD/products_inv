@@ -32,7 +32,6 @@ const productsList = async () => {
     const btnsEdit = t_products.getElementsByClassName("btnEdit");
     for(let i = 0; i < btnsDel.length; i++) {
         btnsDel[i].addEventListener("click", () => {
-            console.log(btnsDel[i].parentElement.parentElement.getElementsByTagName("td")[0].innerHTML);
             deletProduct(btnsDel[i].parentElement.parentElement.getElementsByTagName("td")[0].innerHTML);
         })
 
@@ -42,10 +41,6 @@ const productsList = async () => {
             form_product["producto"].value = btnsEdit[i].parentElement.parentElement.getElementsByTagName("td")[1].innerHTML;
             form_product["cantidad"].value = btnsEdit[i].parentElement.parentElement.getElementsByTagName("td")[2].innerHTML;
             form_product["precio"].value = btnsEdit[i].parentElement.parentElement.getElementsByTagName("td")[3].innerHTML;
-            console.log(form_product["id_p"].value);
-            console.log(form_product["producto"].value);
-            console.log(form_product["cantidad"].value);
-            console.log(form_product["precio"].value);
         });
     }
 }
@@ -73,7 +68,7 @@ const sendNewProduct = () => {
         return res.text();
     })
     .then(res => {
-        console.log(res);
+        alert(res);
         productsList();
         form_product.reset();
     })
@@ -93,7 +88,7 @@ const deletProduct = (idProd) => {
         return res.text();
     })
     .then((data) => {
-        console.log(data);
+        alert(data);
         alert("Producto eliminado");
         productsList();
     })
