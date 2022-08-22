@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: rgba(3, 5, 3, 0.8);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 9px 32px 0 rgba(184, 184, 192, 0.37);
+    border-radius: 10px;
+}
+
+form div {
+    display: flex;
+    margin: 10px auto;
+}
+
+form div div {
+    width: 100px;
+}
+
+form div div label {
+    font-weight: 600;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+select {
+    appearance: none;
+    color: #000;
+    border: none;
+    outline: none;
+}
+
+
+form .input_text,
+form .input_number,
+form .btnEnv,
+form .select_ {
+    padding: 0 4px;
+    width: 200px;
+    border: none;
+    font-size: 14px;
+}
+
+form .btnEnv {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 700;
+    width: 300px;
+    padding: 10px 0;
+    background-color: rgb(45, 46, 43);
+    transition: all .3s;
+    letter-spacing: 3px;
+}
+
+form .btnEnv:hover {
+    cursor: pointer;
+    background-color: rgb(63, 66, 62);
+}
+
+.info_container {
+    margin-top: 60px;
+}
+.info_container table {
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 5px;
+}
+
+table {
+    background-color: #fffdfd;
+    color: #000;
+}
+
+table thead tr th{
+    padding: 10px 10px;
+}
+table tbody tr td{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+table tbody tr td:nth-child(5),
+table tbody tr td:nth-child(6) {
+    margin: 10px 20px;
+    padding: 0 10px;
+    width: 100px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 0;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn.btnEdit {
+    background-color: rgb(40, 50, 220);
+}
+.btn.btnDelete {
+    background-color: rgb(167, 50, 0);
+}

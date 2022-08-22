@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="icon" href="../static/img/logo.ico">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <h1>Inventario</h1>
+    <form class="form-product">
+        <h2>Agregar producto</h2>
+        <input type="number" name="id_p" hidden>
+        <div>
+            <div>
+                <label>Producto</label>
+            </div>
+            <input type="text" name="producto" class="input_text">
+        </div>
+        <div>
+            <div>
+                <label>Cantidad</label>
+            </div>
+            <input type="number" name="cantidad" class="input_number">
+        </div>
+        <div>
+            <div>
+                <label>Precio</label>
+            </div>
+            <input type="number" name="precio" step="any" class="input_number">
+        </div>
+        <div>
+            <div>
+                <label>Tipo de producto</label>
+            </div>
+            <select name="sl_tipo_c" class="select_">
+                <option selected disabled>--Seleccionar--</option>
+                <option value="1">mg</option>
+                <option value="2">kg</option>
+                <option value="3">ml</option>
+                <option value="4">L</option>
+            </select>
+        </div>
+        <input type="submit" class="btnEnv" value="Enviar">
+    </form>
+
+    <div class="info_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Tipo de peso</th>
+                    <th colspan="2">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="t_products">
+                <tr>
+                    <td>MASA</td>
+                    <td>10</td>
+                    <td>14</td>
+                    <td>Kg</td>
+                    <td>
+                        <button class="btn btnEdit">Editar</button>
+                    </td>
+                    <td>
+                        <button class="btn btnDelete">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MASA</td>
+                    <td>10</td>
+                    <td>14</td>
+                    <td>Kg</td>
+                    <td>
+                        <button class="btn btnEdit">Editar</button>
+                    </td>
+                    <td>
+                        <button class="btn btnDelete">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MASA</td>
+                    <td>10</td>
+                    <td>14</td>
+                    <td>Kg</td>
+                    <td>
+                        <button class="btn btnEdit">Editar</button>
+                    </td>
+                    <td>
+                        <button class="btn btnDelete">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <script src="../static/js/main.js"></script> -->
+</body>
+</html>
