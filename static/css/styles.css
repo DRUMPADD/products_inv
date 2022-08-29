@@ -126,3 +126,14 @@ table tbody tr td:nth-child(6) {
 .btn.btnDelete {
     background-color: rgb(167, 50, 0);
 }
+
+
+.alert-success {
+    background-color: rgba(107, 240, 113, .9);
+}
+.alert-warning {
+    background-color: rgba(230, 223, 33, 0.9);
+}
+.alert-danger {
+    background-color: rgba(187, 10, 13, 0.9);
+}
