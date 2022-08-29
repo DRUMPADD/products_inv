@@ -9,7 +9,7 @@ const productsList = async () => {
     ar_products.forEach(el => {
         for(let d of el) {
             content_td += `
-                <tr>
+                <tr ${d.cantidad > 10 ? 'class="alert-success"' : d.cantidad <= 10 && d.cantidad > 0 ? 'class="alert-warning"' : 'class="alert-danger"'}>
                     <td style="display: none;">${d.id}</td>
                     <td>${d.nombre}</td>
                     <td>${d.cantidad}</td>
